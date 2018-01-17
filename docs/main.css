@@ -52,6 +52,7 @@ h1 {
 #playArea {
     background-color:beige;
     width:auto;
-    height:500px;
-    border: solid black 1px;
+    min-height:875px;
+    height:100% !important;
+    border: solid black 5px;
 }
