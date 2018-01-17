@@ -1,0 +1,57 @@
+.clear {
+    clear:both;
+}
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#shape {
+    width:200px;
+    height:200px;
+    background-color:red;
+    display:none;
+    position: relative;
+}
+
+.bold {
+    font-weight: bold;
+}
+#title {
+    height: 100px auto;
+    width:auto;
+    margin: 0px;
+    text-align: center;
+    background-color: aquamarine;
+}
+h1 {
+    margin:0px;
+    padding: 10px;
+    color:black;
+    font-size: 42px;
+}
+#title p {
+    font-weight: bold;
+    margin:0;
+    padding:10px;
+}
+#scores {
+    height: 20px;
+    margin:0px;
+    width:auto;
+    text-align: center;
+    background-color:aliceblue;
+}
+#scores p {
+    margin: 0px 20px 0px 0px;
+    padding:1px;
+    float: left;
+    text-align: center;
+}
+#playArea {
+    background-color:beige;
+    width:auto;
+    height:500px;
+    border: solid black 1px;
+}

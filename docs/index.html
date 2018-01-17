@@ -1,23 +1,41 @@
-<html>
+<!Doctype HTML>
+  <html>
    
     <head>
        
         <title>Reacton Timer</title>
-        
-        <link rel= "stylesheet" type="text/css" src="style.css">
 
+        <link rel="stylesheet" type="text/css" href="main.css">
 
     </head>
     
     <body>
+      
+       <div id="title">
         
-        <h1>Test your Reactions!</h1>
+            <h1>Test your Reactions!</h1>
         
-        <p>Click on the boxes and circles as quickly as you can!</p>
+            <p>Click on the boxes and circles as quickly as you can!</p>
+        
+       </div>
+       
+       <div class="clear"></div>
+        
+        <div id="scores">
+            
+            <p class="bold">High Score: <span id="highScore">0.000s</span></p>
          
-        <p class="bold">Your time: <span id = "timeTaken"></span></p>
+            <p class="bold">Your time: <span id = "timeTaken">0.000s</span></p>
+            
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div id="playArea">
 
-        <div id="shape"></div>
+            <div id="shape"></div>
+        
+        </div>
 
         <script type="text/javascript" src="script.js"></script>
        

@@ -1,4 +1,5 @@
 var start = new Date().getTime();
+var highScore = 1000;
 
 function getRandomColor()
 {
@@ -29,7 +30,6 @@ function makeShapeAppear()
  document.getElementById("shape").style.backgroundColor = getRandomColor();
  document.getElementById("shape").style.width = width + "px";
  document.getElementById("shape").style.height = width + "px";
- document.getElementById("shape").style.position = "relative"
  document.getElementById("shape").style.top = top + "px";
  document.getElementById("shape").style.left = left + "px";
  document.getElementById("shape").style.display = "block";
@@ -42,13 +42,32 @@ setTimeout(makeShapeAppear,Math.random()*2000);
 
 appearAfterDelay();
 
+
+
 document.getElementById("shape").onclick = function()
 {
  document.getElementById("shape").style.display = "none"; 
 
+     
  var end = new Date().getTime();
  var timeTaken = (end-start) / 1000;
- document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+    
+    if (timeTaken < highScore)
+        {
+            highScore = timeTaken;
+            document.getElementById("highScore").innerHTML = highScore + "s";
+            document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+            console.log("New High Score");
+
+        }
+    else
+        {
+            document.getElementById("timeTaken").innerHTML = timeTaken + "s";
+            //console.log("false");
+        }
+
 
  appearAfterDelay();
 }
+    
+        
