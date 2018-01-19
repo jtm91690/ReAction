@@ -80,7 +80,7 @@ function HighScore(timeTaken)
 //Create Average function
 function Average(timeTaken)
 {
-   average =(average + timeTaken)/count;
+   average =(average + timeTaken);
     //console.log(count);
     document.getElementById("average").innerHTML = average.toFixed(3) + "s"; 
 }
@@ -112,7 +112,7 @@ document.getElementById("shape").onclick = function()
     var timeTaken = (end-start) / 1000; 
     
     //Call Average Function
-    Average(timeTaken);
+    Average(timeTaken)/Counter();
     
     //Call HighScore function
     HighScore(timeTaken);
@@ -120,6 +120,7 @@ document.getElementById("shape").onclick = function()
     //Last 5 scores
     LastFiveScores(timeTaken);
 
+    //Call function for appear after a delay
     appearAfterDelay();
 }
     
